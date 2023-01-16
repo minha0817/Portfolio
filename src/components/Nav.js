@@ -3,6 +3,7 @@ import React from "react";
 export default function Nav() {
   return(
     <nav id="navbar">
+      
       <div className="navbar__logo">
       <a href="/">Minha</a>
       </div>
