@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function MyWork() {
+export default function Skill () {
   return (
     <section>
-      My Work
+      Skill
     </section>
   )
 }
