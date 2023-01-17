@@ -20,21 +20,21 @@ export default function MyWork() {
         </button>
       </div>
       <div className="projects">
-        <a href="https://github.com/minha0817/workout_tracker" className="project">
+        <a href="https://github.com/minha0817/workout_tracker" className="project"  target="_blank">
           <img className="project__img" style={{width: 200, height: 150}} src={fithub} alt="Project Fithub"></img>
           <div className="project__description">
             <h3>Workout Tracker, Fithub</h3>
             <span>HTML, CSS, JS, React, NodeJS, Express, PostSQL, MUI</span>
           </div>
         </a>
-        <a href="https://github.com/nicohsfu/pikmiup" className="project">
+        <a href="https://github.com/nicohsfu/pikmiup" className="project"  target="_blank">
           <img className="project__img" style={{width: 200, height: 150}} src={pickmiup} alt="Project Pickmiup"></img>
           <div className="project__description">
             <h3>Food ordering app, Pickmiup</h3>
             <span>HTML, CSS, JS, NodeJS, Express, EJS, jQuery ,PostgreSQL, Bootstrap, Sass</span>
           </div>
         </a>
-        <a href="https://github.com/minha0817/to-do-list" className="project">
+        <a href="https://github.com/minha0817/to-do-list" className="project"  target="_blank">
           <img className="project__img" style={{width: 200, height: 150}} src={todolist} alt="Project Todolist"></img>
           <div className="project__description">
             <h3>To Do List app</h3>
