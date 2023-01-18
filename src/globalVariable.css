@@ -3,8 +3,8 @@
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #fe918d;
-    --color-dark-pink: #ff6863;
+    --color-pink: #f3ad97;
+    --color-dark-pink: #d17163;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
@@ -44,6 +44,14 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  /* border: none;
+  outline: none; */
+}
+
 /* Typography */
 
 h1 {
