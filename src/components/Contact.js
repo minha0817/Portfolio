@@ -4,7 +4,7 @@ import { GrDocumentText } from "react-icons/gr";
 
 export default function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" className="section">
       <h1 className="contact__title">Let's talk</h1>
       <div className="contact__links">
         <a href="https://github.com/minha0817" target="_blank">

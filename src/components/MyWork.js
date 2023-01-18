@@ -5,7 +5,7 @@ import todolist from "../pics/projects/todolist.png";
 
 export default function MyWork() {
   return (
-    <section id="mywork">
+    <section id="mywork" className="section">
       <h1 className="mywork__title">My Work</h1>
       <p className="mywork__subtitle">Projects</p>
       <div className="mywork__buttons">

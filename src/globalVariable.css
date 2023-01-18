@@ -81,3 +81,9 @@ p {
   color: var(--color-black);
   margin: 4px 0;
 }
+
+.section {
+  text-align: center;
+  margin: 50px;
+  max-width: 1000;
+}
