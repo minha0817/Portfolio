@@ -25,8 +25,11 @@
     --weight-semi-bold: 600;
     --weight-regular: 400;
 
-    /* size */
+    /* Size */
     --size-border-radius: 4px;
+
+    /* Animation */
+    --transition-duration: 300ms;
 }
 
 /* Universal tags */

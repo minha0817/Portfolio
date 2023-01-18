@@ -20,7 +20,7 @@
   width: 38px;
   height: 38px;
   opacity: 1;
-  transition: 0.3s;
+  transition: var(--transition-duration);
 }
 
 .navbar__menu {
