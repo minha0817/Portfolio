@@ -12,7 +12,7 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
-  
+
     /* Font size */
     --font-large: 48px;
     --font-medium: 28px;
@@ -24,13 +24,26 @@
     --weight-bold: 700;
     --weight-semi-bold: 600;
     --weight-regular: 400;
+
+    /* size */
+    --size-border-radius: 4px;
 }
 
 /* Universal tags */
 * {
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
+  cursor: default;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 /* Typography */
 
 h1 {

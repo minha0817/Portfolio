@@ -1,0 +1,36 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  padding: 0 16px;
+}
+
+.navbar__logo {
+  color: var(--color-white);
+}
+
+.navbar__logo__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  margin: 0 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border-style: solid;
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-pink);
+}
