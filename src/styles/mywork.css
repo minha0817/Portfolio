@@ -106,3 +106,8 @@
   font-size: var(--font-micro);
 }
 
+@media screen and (max-width: 768px) {
+  .project {
+    flex-grow: 1;
+  }
+}
