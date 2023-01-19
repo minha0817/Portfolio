@@ -37,8 +37,6 @@
   cursor: pointer;
 }
 
-
-
 .contact__icon svg:hover {
   transform: scale(1.2);
   color: var(--color-dark-pink);
