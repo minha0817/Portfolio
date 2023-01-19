@@ -72,7 +72,7 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    display: none;
+    /* display: none; */
   }
   
 }
