@@ -58,7 +58,7 @@
   align-items: center;
   margin: 30px;
   width: 350px;
-  height: 350px;
+  height: 250px;
 }
 
 .project__img {
@@ -85,6 +85,11 @@
   opacity: 0.8;
   cursor: pointer;
   transform: translateY(0);
+}
+
+.project:hover .project__description h3,
+.project:hover .project__description span {
+  cursor: pointer;
 }
 
 .project__description h3,

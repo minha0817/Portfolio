@@ -1,0 +1,45 @@
+#contact {
+  background-color: var(--color-pink);
+}
+
+.contact__title {
+  padding: 30px;
+  color: var(--color-white);
+}
+
+.contact__email {
+  margin: 20px;
+  color: var(--color-white);
+}
+
+.contact__links {
+  padding: 20px;
+  color: var(--color-light-white);
+  font-size: var(--font-large);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__icons {
+  color: var(--color-light-white);
+  font-size: var(--font-large);
+  margin: 15px;
+}
+
+.contact__icon svg {
+  /* transition: all var(--transition-duration) ease; */
+  cursor: pointer;
+}
+
+.contact__icon svg path{
+  /* transition: all var(--transition-duration) ease; */
+  cursor: pointer;
+}
+
+
+
+.contact__icon svg:hover {
+  transform: scale(1.1);
+  color: var(--color-dark-pink);
+}
