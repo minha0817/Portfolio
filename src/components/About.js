@@ -15,7 +15,7 @@ export default function About() {
       </p>
 
       <ul className="about__majors">
-        <li className="major">
+        <li className="major major__front-end">
           <AiFillHtml5 className="major__icon" style={{ fontSize: 150, color: "d17163"}}/>
           <h2 className="major__title">Front-end</h2>
           <p className="major__description">HTML, CSS, Javascript, <br/>React, Web APIs</p>
