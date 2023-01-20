@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.d5c39826.css",
-    "main.js": "/my_portfolio/static/js/main.76dcdb5b.js",
-    "static/js/787.1297335f.chunk.js": "/my_portfolio/static/js/787.1297335f.chunk.js",
-    "static/media/profile2.png": "/my_portfolio/static/media/profile2.10e5023c7b1a39ef7448.png",
-    "static/media/pickmiup.png": "/my_portfolio/static/media/pickmiup.58928aa116e7e698723f.png",
-    "static/media/fithub.png": "/my_portfolio/static/media/fithub.1a6cb5bb27f63db6697c.png",
-    "static/media/todolist.png": "/my_portfolio/static/media/todolist.90ae9a7cc96ca7e32e76.png",
-    "static/media/background.jpeg": "/my_portfolio/static/media/background.e947c95b78e342143aea.jpeg",
-    "index.html": "/my_portfolio/index.html",
-    "main.d5c39826.css.map": "/my_portfolio/static/css/main.d5c39826.css.map",
-    "main.76dcdb5b.js.map": "/my_portfolio/static/js/main.76dcdb5b.js.map",
-    "787.1297335f.chunk.js.map": "/my_portfolio/static/js/787.1297335f.chunk.js.map"
+    "main.css": "/static/css/main.e0b919a4.css",
+    "main.js": "/static/js/main.08c68ec2.js",
+    "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
+    "static/media/profile2.png": "/static/media/profile2.10e5023c7b1a39ef7448.png",
+    "static/media/pickmiup.png": "/static/media/pickmiup.58928aa116e7e698723f.png",
+    "static/media/fithub.png": "/static/media/fithub.1a6cb5bb27f63db6697c.png",
+    "static/media/todolist.png": "/static/media/todolist.90ae9a7cc96ca7e32e76.png",
+    "static/media/background.jpeg": "/static/media/background.e947c95b78e342143aea.jpeg",
+    "index.html": "/index.html",
+    "main.e0b919a4.css.map": "/static/css/main.e0b919a4.css.map",
+    "main.08c68ec2.js.map": "/static/js/main.08c68ec2.js.map",
+    "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5c39826.css",
-    "static/js/main.76dcdb5b.js"
+    "static/css/main.e0b919a4.css",
+    "static/js/main.08c68ec2.js"
   ]
 }
