@@ -5,16 +5,18 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Nav() {
 
-  const [isNavExpanded, SetisNavExpanded] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isBtnActive, setIsBtnActive] = useState(false);
 
   const handleNav = () => {
-    SetisNavExpanded(!isNavExpanded)
+    setIsNavExpanded(!isNavExpanded)
   };
+
 
   const handleClickScroll = (id) => {
     const element  = document.getElementById(id);
     if(element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'smooth'});
     }
   };
 
@@ -27,10 +29,10 @@ export default function Nav() {
       </div>
       <div className={isNavExpanded? "navbar__menu expanded" : "navbar__menu"}>
         <ul className="navbar__menu">
+          <button className="navbar__menu__item" onClick={() => {handleClickScroll('home')}}>Home</button>
           <button className="navbar__menu__item" onClick={() => {handleClickScroll('about')}}>About me</button>
           <button className="navbar__menu__item" onClick={() => {handleClickScroll('skills')}}>Skills</button>
           <button className="navbar__menu__item" onClick={() => {handleClickScroll('mywork')}}>My Work</button>
-          <button className="navbar__menu__item active" onClick={() => {handleClickScroll('home')}}>Home</button>
           <button className="navbar__menu__item" onClick={() => {handleClickScroll('contact')}}>Contact</button>
         </ul>
       </div>

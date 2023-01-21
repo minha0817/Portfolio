@@ -1,7 +1,7 @@
 #home {
   background-image: url("../pics/background.jpeg");
   text-align: center;
-  padding: 40px;
+  padding: 100px 40px 40px 40px;
 }
 
 .home__picture {

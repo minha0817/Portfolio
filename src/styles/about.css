@@ -1,3 +1,7 @@
+#about {
+  padding-top: 40px;
+}
+
 .about__title,
 .about__description {
   color: var(--color-dark-grey);
