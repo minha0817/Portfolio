@@ -72,7 +72,10 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    display: none;
   }
   
+  .navbar__menu.expanded {
+    display: none;
+  }
+
 }

@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import icon from "../pics/favicon2.png";
 import "../styles/nav.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Nav() {
+
+  const [isNavExpanded, SetisNavExpanded] = useState(false);
+
+  const handleNav = function() {
+    SetisNavExpanded(!isNavExpanded)
+  };
+
   return (
     <nav id="navbar">
       <div>
@@ -11,7 +18,7 @@ export default function Nav() {
           <img src={icon} alt="icon" className="navbar__logo__icon"></img>
         </a>
       </div>
-      <div className="navbar__menu">
+      <div className={isNavExpanded? "navbar__menu expanded" : "navbar__menu"}>
         <ul className="navbar__menu">
           <li className="navbar__menu__item active">Home</li>
           <li className="navbar__menu__item">About me</li>
@@ -20,7 +27,7 @@ export default function Nav() {
           <li className="navbar__menu__item">Contact</li>
         </ul>
       </div>
-      <button className="navbar__toggle-btn">
+      <button className="navbar__toggle-btn" onClick={handleNav}>
         <GiHamburgerMenu style={{ fontSize: 30, color: "white" }} />
       </button>
     </nav>
