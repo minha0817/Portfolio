@@ -7,9 +7,10 @@ import MyWork from './components/MyWork';
 import Contact from './components/Contact';
 
 function App() {
+
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
       <Home />
       <About />
       <Skill />
