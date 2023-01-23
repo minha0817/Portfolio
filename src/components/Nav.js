@@ -10,7 +10,7 @@ export default function Nav() {
 
   //Make navbar transparent when it is on the top of the document.
   document.addEventListener('scroll', () => {
-    if(window.scrollY >= 60) {
+    if(window.scrollY >= 50) {
       setColorChange(true);
     } else {
       setColorChange(false);
