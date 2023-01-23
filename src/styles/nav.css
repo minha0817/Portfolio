@@ -8,8 +8,13 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition: all var(--transition-duration) ease-in-out;
 }
 
+#navbar.navbar__dark {
+  background-color: var(--color-pink);
+  height: 60px;
+}
 
 .navbar__logo__icon {
   width: 30px;
@@ -60,6 +65,8 @@
 .navbar__toggle-btn:hover svg, path {
   cursor: pointer;
 }
+
+
 
 @media screen and (max-width: 768px){
   .navbar__toggle-btn{

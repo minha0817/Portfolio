@@ -6,13 +6,21 @@ import { GiHamburgerMenu } from "react-icons/gi";
 export default function Nav() {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const [isBtnActive, setIsBtnActive] = useState(false);
+  const [colorChange, setColorChange] = useState(false);
+
+  //Make navbar transparent when it is on the top of the document.
+  document.addEventListener('scroll', () => {
+    if(window.scrollY >= 60) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  })
 
   const handleNav = () => {
     setIsNavExpanded(!isNavExpanded)
   };
-
-
+  
   const handleClickScroll = (id) => {
     const element  = document.getElementById(id);
     if(element) {
@@ -20,8 +28,13 @@ export default function Nav() {
     }
   };
 
+  const handleClickBtn = (id) => {
+    handleClickScroll(id);
+  }
+
+
   return (
-    <nav id="navbar">
+    <nav id="navbar" className={colorChange ? "navbar__dark" : ""}>
       <div>
         <a href="/" className="navbar__logo">
           <img src={icon} alt="icon" className="navbar__logo__icon"></img>
@@ -29,11 +42,11 @@ export default function Nav() {
       </div>
       <div className={isNavExpanded? "navbar__menu expanded" : "navbar__menu"}>
         <ul className="navbar__menu">
-          <button className="navbar__menu__item" onClick={() => {handleClickScroll('home')}}>Home</button>
-          <button className="navbar__menu__item" onClick={() => {handleClickScroll('about')}}>About me</button>
-          <button className="navbar__menu__item" onClick={() => {handleClickScroll('skills')}}>Skills</button>
-          <button className="navbar__menu__item" onClick={() => {handleClickScroll('mywork')}}>My Work</button>
-          <button className="navbar__menu__item" onClick={() => {handleClickScroll('contact')}}>Contact</button>
+          <button className="navbar__menu__item" onClick={() => {handleClickBtn('home')}}>Home</button>
+          <button className="navbar__menu__item" onClick={() => {handleClickBtn('about')}}>About me</button>
+          <button className="navbar__menu__item" onClick={() => {handleClickBtn('skills')}}>Skills</button>
+          <button className="navbar__menu__item" onClick={() => {handleClickBtn('mywork')}}>My Work</button>
+          <button className="navbar__menu__item" onClick={() => {handleClickBtn('contact')}}>Contact</button>
         </ul>
       </div>
       <button className="navbar__toggle-btn" onClick={handleNav}>
