@@ -34,8 +34,6 @@ export default function Nav() {
     handleNav();
   }
 
-  console.log("ldjsd")
-
   return (
     <nav id="navbar" className={colorChange ? "navbar__dark" : ""}>
       <div>
