@@ -1,4 +1,5 @@
 import './globalVariable.css';
+import React, {useState} from 'react';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
@@ -7,6 +8,7 @@ import MyWork from './components/MyWork';
 import Contact from './components/Contact';
 
 function App() {
+
 
   return (
     <div className="App">
