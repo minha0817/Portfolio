@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import icon from "../pics/favicon2.png";
 import "../styles/nav.css";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -8,12 +8,8 @@ export default function Nav() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [colorChange, setColorChange] = useState(false);
 
+
   //Make navbar transparent when it is on the top of the document.
-
-  // useEffect(() => {
-  //   setIsNavExpanded(false)
-  // }, [])
-
   document.addEventListener('scroll', () => {
     if(window.scrollY >= 50) {
       setColorChange(true);
@@ -35,8 +31,10 @@ export default function Nav() {
 
   const handleClickBtn = (id) => {
     handleClickScroll(id);
+    handleNav();
   }
 
+  console.log("ldjsd")
 
   return (
     <nav id="navbar" className={colorChange ? "navbar__dark" : ""}>
@@ -45,7 +43,7 @@ export default function Nav() {
           <img src={icon} alt="icon" className="navbar__logo__icon"></img>
         </a>
       </div>
-      <div className={isNavExpanded? "navbar__menu expanded" : "navbar__menu"}>
+      <div className={!isNavExpanded? "navbar__menu expanded" : "navbar__menu"}>
         <ul className="navbar__menu">
           <button className="navbar__menu__item" onClick={() => {handleClickBtn('home')}}>Home</button>
           <button className="navbar__menu__item" onClick={() => {handleClickBtn('about')}}>About me</button>

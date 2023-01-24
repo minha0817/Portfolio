@@ -49,7 +49,6 @@
   border-radius: var(--size-border-radius);
   border: 2px solid transparent;
   transition: all var(--transition-duration) ease-in-out;
-
 }
 
 .navbar__menu__item:hover {
@@ -70,18 +69,17 @@
 }
 
 
-
 @media screen and (max-width: 768px){
   .navbar__toggle-btn{
     display: block;
   }
-
+  
   #navbar {
     flex-direction: column;
     align-items: flex-start;
     padding: 16px;
   }
-
+  
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -89,7 +87,7 @@
     background-color: var(--color-pink);
     opacity: 0.9;
   }
-
+  
   .navbar__menu.expanded {
     display: none;
   }
