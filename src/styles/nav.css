@@ -4,8 +4,8 @@
   align-items: center;
   color: var(--color-white);
   background-color: transparent;
-  padding: 0 16px;
   position: fixed;
+  padding: 0 16px;
   width: 100%;
   z-index: 1;
   transition: all var(--transition-duration) ease-in-out;
@@ -89,7 +89,7 @@
     background-color: var(--color-pink);
     opacity: 0.9;
   }
-  
+
   .navbar__menu.expanded {
     display: none;
   }

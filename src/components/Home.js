@@ -2,27 +2,32 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Picture from "../pics/profile2.png";
 import "../styles/home.css";
 
-export default function Home({handleScrollTop}) {
+export default function Home() {
   const ref = useRef(null);
   const [height, setHeight] = useState(0);
-  // const [scrollTop, setScrollTop] = useState(0);
+  const [scrollTop, setScrollTop] = useState(0);
 
   useLayoutEffect(() => {
     setHeight(ref.current.offsetHeight);
   }, []);
 
-  // console.log("height", height);
-  // const handleScrollTop = (event) => {
-  //   setScrollTop(event.currentTarget.scrollTop);
-  //   console.log("event.currentTarget.scrollTop", event.currentTarget);
-  // };
+  useEffect(() => {
+    const handleScroll = (event) => {
+      setScrollTop(window.scrollY);
+    };
 
-  // console.log("out scrollTop", scrollTop);
+    window.addEventListener('scroll', handleScroll);
 
-  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const opacity =  1 -(scrollTop / height);
+
   return (
-    <section id="home" ref={ref} style={{}}>
-      <div onScroll={() => {handleScrollTop()}}>
+    <section id="home" ref={ref} >
+      <div style={{opacity: opacity}}>
         <img className="home__picture" src={Picture} alt="Picture"></img>
         <h1 className="home__title">
           Hello, <br />

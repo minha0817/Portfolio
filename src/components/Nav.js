@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import icon from "../pics/favicon2.png";
 import "../styles/nav.css";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -9,6 +9,11 @@ export default function Nav() {
   const [colorChange, setColorChange] = useState(false);
 
   //Make navbar transparent when it is on the top of the document.
+
+  // useEffect(() => {
+  //   setIsNavExpanded(false)
+  // }, [])
+
   document.addEventListener('scroll', () => {
     if(window.scrollY >= 50) {
       setColorChange(true);
