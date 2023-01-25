@@ -47,8 +47,6 @@ export default function MyWork() {
 
     setFilteredWork(works.filter(work => work.status === status))
   }
-
-  console.log(activeButton, "but")
   
   return (
     <section id="mywork" className="section">

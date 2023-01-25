@@ -16,6 +16,10 @@
   height: 60px;
 }
 
+.navbar__logo {
+  margin-top: 7px;
+}
+
 .navbar__logo__icon {
   width: 30px;
   height: 30px;
@@ -75,7 +79,7 @@
   }
   
   .navbar__logo__icon {
-    margin: 16px 0 0 16px;
+    margin: 10px 14px;
   }
 
   #navbar {

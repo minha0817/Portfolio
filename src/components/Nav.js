@@ -36,8 +36,8 @@ export default function Nav() {
 
   return (
     <nav id="navbar" className={colorChange ? "navbar__dark" : ""}>
-      <div>
-        <a href="/" className="navbar__logo">
+      <div className="navbar__logo">
+        <a href="/">
           <img src={icon} alt="icon" className="navbar__logo__icon"></img>
         </a>
       </div>
