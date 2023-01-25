@@ -33,37 +33,35 @@ const works = [
 export default function MyWork() {
   
   const [filteredWork, setFilteredWork] = useState(works);
-  const [activeBtn, setActiveBtn] = useState(false);
 
-  
+  const [activeButton, setActiveButton] = useState("all")
+
   const getFilteredWork = (status) => {
 
-    if(status === "completed"){
-      setFilteredWork(works.filter(work => work.status === status))
-    }
+    setActiveButton(status);
 
-    if(status === "inProgress"){
-      setFilteredWork(works.filter(work => work.status === status))
-    }
-    
-    if(status === ""){
+    if(status === "all"){
       setFilteredWork(works);
+      return;
     }
-    }
-  
 
+    setFilteredWork(works.filter(work => work.status === status))
+  }
+
+  console.log(activeButton, "but")
+  
   return (
     <section id="mywork" className="section">
       <h1 className="mywork__title">My Work</h1>
       <p className="mywork__subtitle">Projects</p>
       <div className="mywork__buttons">
-        <button className="mywork__button" onClick={() => {getFilteredWork("")}}>
+        <button className={activeButton === "all" ? "mywork__button active" : "mywork__button"} onClick={() => {getFilteredWork("all")}}>
           All<span className="mywork__count">3</span>
         </button>
-        <button className="mywork__button" onClick={() => {getFilteredWork("completed")}}>
+        <button className={activeButton === "completed" ? "mywork__button active" : "mywork__button"} onClick={() => {getFilteredWork("completed")}}>
           Completed<span className="mywork__count">2</span>
         </button>
-        <button className="mywork__button" onClick={() => {getFilteredWork("inProgress")}}>
+        <button className={activeButton === "inProgress"  ? "mywork__button active" : "mywork__button"} onClick={() => {getFilteredWork("inProgress")}}>
           In Progress<span className="mywork__count">1</span>
         </button>
       </div>
