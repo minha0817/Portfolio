@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Model from "./Model";
+import ModelAni from "./ModelAni";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import "../styles/home.css";
@@ -42,7 +43,7 @@ export default function Home() {
           <ambientLight intensity={1.25} />
           <ambientLight intensity={0.1} />
           <directionalLight intensity={0.4} />
-          <Model position={[0.025, -0.9, 0]} />
+          <ModelAni position={[0.025, -0.9, 0]} />
           <OrbitControls />
         </Canvas>
 
