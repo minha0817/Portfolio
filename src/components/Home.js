@@ -32,7 +32,7 @@ export default function Home() {
     <section id="home" ref={ref}>
       <div className="home" style={{ opacity: opacity }}>
         <Canvas
-          camera={{ position: [2, 0, 12.25], fov: 15 }}
+          camera={{ position: [2, 0, 12.25], fov: 10 }}
           className="home__avatar"
           style={{
             backgroundColor: "#111a21",
