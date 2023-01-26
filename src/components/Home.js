@@ -1,5 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import Picture from "../pics/profile2.png";
+import Model from "./Model";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import "../styles/home.css";
 
 export default function Home() {
@@ -16,29 +18,46 @@ export default function Home() {
       setScrollTop(window.scrollY);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const opacity =  1 -(scrollTop / height);
+  const opacity = 1 - scrollTop / height;
 
   return (
-    <section id="home" ref={ref} >
-      <div style={{opacity: opacity}}>
-        <img className="home__picture" src={Picture} alt="Picture"></img>
-        <h1 className="home__title">
-          Hello, <br />
-          I'm Minha Kim
-        </h1>
-        <h3 className="home__description">
-          A Front-end Developer currently residing in Vancouver, Canada{" "}
-        </h3>
-        <a href="mailto:minhakk24@gmail.com" target="_blank">
-          <button className="home__contact">CONTACT ME</button>
-        </a>
+    <section id="home" ref={ref}>
+      <div className="home" style={{ opacity: opacity }}>
+        <Canvas
+          camera={{ position: [2, 0, 12.25], fov: 15 }}
+          className="home__avatar"
+          style={{
+            backgroundColor: "#111a21",
+            width: "300px",
+            height: "300px",
+          }}
+        >
+          <ambientLight intensity={1.25} />
+          <ambientLight intensity={0.1} />
+          <directionalLight intensity={0.4} />
+          <Model position={[0.025, -0.9, 0]} />
+          <OrbitControls />
+        </Canvas>
+
+        <div className="home__right">
+          <h1 className="home__title">
+            Hello, <br />
+            I'm Minha Kim
+          </h1>
+          <h3 className="home__description">
+            A Front-end Developer currently residing in Vancouver, Canada{" "}
+          </h3>
+          <a href="mailto:minhakk24@gmail.com" target="_blank">
+            <button className="home__contact">CONTACT ME</button>
+          </a>
+        </div>
       </div>
     </section>
   );
