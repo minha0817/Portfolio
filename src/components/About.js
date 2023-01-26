@@ -8,7 +8,7 @@ export default function About() {
     <section id="about" className="section section__container">
       <h1 className="about__title">About me</h1>
       <p className="about__description">
-        Full stack web developer transitioning from the early childhood
+        A front-end web developer transitioning from the early childhood
         education industry. <br/>I enjoy the fast-paced, ever-changing environment of
         web development and being able to create websites that make a difference
         in people’s lives.

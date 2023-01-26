@@ -66,11 +66,12 @@ export default function Skill() {
             ))}
           </div>
         </div>
-        <div></div>
         <div className="skillset__right">
           <span className="skillset__title">Tools</span>
           <div className="skillset__all_right">
-            <span>Git</span>
+            <p>Visual Studio</p>
+            <p>Github</p>
+            <p>Figma</p>
           </div>
         </div>
       </div>

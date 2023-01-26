@@ -53,7 +53,7 @@ export default function Home() {
             I'm Minha Kim
           </h1>
           <h3 className="home__description">
-            A Front-end Developer currently residing in Vancouver, Canada{" "}
+            A Front-end Developer based in Vancouver, Canada
           </h3>
           <a href="mailto:minhakk24@gmail.com" target="_blank">
             <button className="home__contact">CONTACT ME</button>

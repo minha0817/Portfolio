@@ -48,6 +48,11 @@
   font-size: var(--font-micro);
 }
 
+.skillset__all_right p {
+  color: white;
+  font-size: var(--font-micro);
+}
+
 .skillset__title {
   font-weight: var(--weight-bold);
 }
