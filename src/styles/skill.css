@@ -14,47 +14,24 @@
 }
 
 .skillset {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: var(--color-light-grey);
   margin-top: 20px;
   color: var(--color-light-white);
-}
-
-.skillset__left {
-  background-color: var(--color-dark-grey);
-  flex-basis: 60%;
-  padding: 20px;
-}
-
-.languages {
-  margin: 20px;
-  font-size: var(--font-micro);
-}
-
-.language {
-  display: flex;
-  justify-content: space-between;
-}
-
-.skillset__right {
   background-color: var(--color-grey);
-  flex-basis: 40%;
   padding: 20px;
 }
 
-.skillset__all_right {
-  padding: 20px;
-  font-size: var(--font-micro);
+
+.skillset__item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  /* justify-content: space-between; */
 }
 
-.skillset__all_right p {
-  color: white;
-  font-size: var(--font-micro);
-}
 
 .skillset__title {
   font-weight: var(--weight-bold);
+  color: var(--color-light-white);
 }
 
 @media screen and (max-width: 768px) {
