@@ -6,7 +6,7 @@ import { AiFillDatabase } from "react-icons/ai";
 export default function About() {
   return (
     <section id="about" className="section section__container">
-      <h1 className="about__title">About me</h1>
+      <h1 className="about__title">About Me</h1>
       <div className="about__description">
         <p className="about__description__detail">
           🏡 <strong>My background was :</strong> Early Childhood Education, Biology.

@@ -51,7 +51,6 @@ export default function MyWork() {
   return (
     <section id="mywork" className="section">
       <h1 className="mywork__title">My Work</h1>
-      <p className="mywork__subtitle">Projects</p>
       <div className="mywork__buttons">
         <button className={activeButton === "all" ? "mywork__button active" : "mywork__button"} onClick={() => {getFilteredWork("all")}}>
           All<span className="mywork__count">3</span>
@@ -71,7 +70,7 @@ export default function MyWork() {
                 className="project__img"
                 src={work.src}
                 alt={work.title}
-              ></img>
+              />
               <div className="project__description">
                 <h3>{work.title}</h3>
                 <span>{work.description}</span>
@@ -83,3 +82,5 @@ export default function MyWork() {
     </section>
   );
 }
+
+

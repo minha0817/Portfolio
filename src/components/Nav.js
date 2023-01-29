@@ -44,7 +44,7 @@ export default function Nav() {
       <div className={!isNavExpanded? "navbar__menu expanded" : "navbar__menu"}>
         <ul className="navbar__menu">
           <button className="navbar__menu__item" onClick={() => {handleClickBtn('home')}}>Home</button>
-          <button className="navbar__menu__item" onClick={() => {handleClickBtn('about')}}>About me</button>
+          <button className="navbar__menu__item" onClick={() => {handleClickBtn('about')}}>About Me</button>
           <button className="navbar__menu__item" onClick={() => {handleClickBtn('skills')}}>Skills</button>
           <button className="navbar__menu__item" onClick={() => {handleClickBtn('mywork')}}>My Work</button>
           <button className="navbar__menu__item" onClick={() => {handleClickBtn('contact')}}>Contact</button>
