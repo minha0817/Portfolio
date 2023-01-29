@@ -13,7 +13,7 @@
 
 #navbar.navbar__dark {
   background-color: var(--color-pink);
-  height: 60px;
+  height: 62px;
 }
 
 .navbar__logo {
@@ -24,9 +24,8 @@
   width: 30px;
   height: 30px;
   line-height: 30px;
-  opacity: 0.6;
+  opacity: 1;
   cursor: pointer;
-  background-color: var(--color-dark-pink);
   border-radius: var(--size-border-radius);
 }
 
@@ -58,6 +57,7 @@
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
   border-color: var(--color-white);
+  color: var(--color-pink);
 }
 
 .navbar__toggle-btn {
@@ -93,7 +93,7 @@
     text-align: center;
     width: 100%;
     background-color: var(--color-pink);
-    opacity: 0.9;
+    opacity: 1;
   }
   
   .navbar__menu.expanded {

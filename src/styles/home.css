@@ -1,5 +1,5 @@
 #home {
-  background-image: url("../pics/background.jpeg");
+  background-color: #24305e;
   text-align: center;
   padding: 100px 40px 40px 40px;  
 }
@@ -15,6 +15,9 @@
   border: 2px solid var(--color-white);
 }
 
+.home__name {
+  color: var(--color-highlight);
+}
 
 .home__title,
 .home__description {

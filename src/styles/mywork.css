@@ -21,7 +21,7 @@
 .mywork__button.active,
 .mywork__button:hover {
   background-color: var(--color-dark-pink);
-  color: var(--color-white);
+  color: var(--color-pink);
   border: 2px solid var(--color-dark-pink);
 }
 
@@ -33,7 +33,7 @@
 
 .mywork__count {
   margin-left: 5px;
-  background-color: var(--color-yellow);
+  background-color: var(--color-pink);
   width: 24px;
   height: 24px;
   line-height: 24px;

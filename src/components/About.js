@@ -28,7 +28,7 @@ export default function About() {
         <li className="major major__front-end">
           <AiFillHtml5
             className="major__icon"
-            style={{ fontSize: 150, color: "d17163" }}
+            style={{ fontSize: 150, color: "f76c6c" }}
           />
           <h2 className="major__title">Front-end</h2>
           <p className="major__description">
@@ -39,7 +39,7 @@ export default function About() {
         <li className="major">
           <AiFillDatabase
             className="major__icon"
-            style={{ fontSize: 150, color: "d17163" }}
+            style={{ fontSize: 150, color: "f76c6c" }}
           />
           <h2 className="major__title">Back-end</h2>
           <p className="major__description">

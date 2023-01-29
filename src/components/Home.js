@@ -50,7 +50,7 @@ export default function Home() {
         <div className="home__right">
           <h1 className="home__title">
             Hello, <br />
-            I'm Minha Kim
+            I'm <span className="home__name">Minha Kim</span>
           </h1>
           <h3 className="home__description">
             A Front-end Developer based in Vancouver, Canada

@@ -3,8 +3,8 @@
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #f3ad97;
-    --color-dark-pink: #d17163;
+    --color-pink: #374785;
+    --color-dark-pink: #a8d0e6;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
@@ -12,7 +12,8 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
-
+    --color-highlight: #f76c6c;
+    
     /* Font size */
     --font-large: 48px;
     --font-medium: 28px;
