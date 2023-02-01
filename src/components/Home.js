@@ -53,7 +53,7 @@ export default function Home() {
             I'm <span className="home__name">Minha Kim</span>
           </h1>
           <h3 className="home__description">
-            A Full stack Developer based in Vancouver, Canada
+            A Full Stack Developer based in Vancouver, Canada
           </h3>
           <a href="mailto:minhakk24@gmail.com" target="_blank">
             <button className="home__contact">CONTACT ME</button>
