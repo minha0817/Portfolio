@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.04620e84.css",
-    "main.js": "/static/js/main.f32c6729.js",
+    "main.css": "/static/css/main.0960847b.css",
+    "main.js": "/static/js/main.4165b778.js",
     "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
     "static/media/pickmiup.png": "/static/media/pickmiup.58928aa116e7e698723f.png",
     "static/media/fithub.png": "/static/media/fithub.1a6cb5bb27f63db6697c.png",
     "static/media/todolist.png": "/static/media/todolist.90ae9a7cc96ca7e32e76.png",
     "index.html": "/index.html",
-    "main.04620e84.css.map": "/static/css/main.04620e84.css.map",
-    "main.f32c6729.js.map": "/static/js/main.f32c6729.js.map",
+    "main.0960847b.css.map": "/static/css/main.0960847b.css.map",
+    "main.4165b778.js.map": "/static/js/main.4165b778.js.map",
     "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04620e84.css",
-    "static/js/main.f32c6729.js"
+    "static/css/main.0960847b.css",
+    "static/js/main.4165b778.js"
   ]
 }
