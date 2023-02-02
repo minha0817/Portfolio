@@ -15,6 +15,10 @@
   border: 2px solid var(--color-white);
 }
 
+.home__introduction {
+  display: inline;
+}
+
 .home__name {
   color: var(--color-highlight);
 }
@@ -53,5 +57,9 @@
 
   .home__avatar {
     text-align: center;
+  }
+
+  .home__introduction {
+    display: block;
   }
 }
