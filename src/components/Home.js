@@ -1,22 +1,19 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import Model from "./Model";
-import ModelAni from "./ModelAni";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import "../styles/home.css";
+import { Avatar } from "./Avatar";
 
 export default function Home() {
   const ref = useRef(null);
   const [height, setHeight] = useState(0);
-  const [scrollTop, setScrollTop] = useState(0);
+  const [opacity, setOpacity] = useState(1);
 
   useLayoutEffect(() => {
     setHeight(ref.current.offsetHeight);
   }, []);
 
   useEffect(() => {
-    const handleScroll = (event) => {
-      setScrollTop(window.scrollY);
+    const handleScroll = () => {
+      setOpacity(1 - window.scrollY / height);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -24,33 +21,20 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
-  const opacity = 1 - scrollTop / height;
+  }, [height]);
 
   return (
     <section id="home" ref={ref}>
       <div className="home" style={{ opacity: opacity }}>
-        <Canvas
-          camera={{ position: [2, 0, 12.25], fov: 10 }}
-          className="home__avatar"
-          style={{
-            backgroundColor: "#111a21",
-            width: "300px",
-            height: "300px",
-          }}
-        >
-          <ambientLight intensity={1.25} />
-          <ambientLight intensity={0.1} />
-          <directionalLight intensity={0.4} />
-          <ModelAni position={[0.025, -0.9, 0]} />
-          <OrbitControls />
-        </Canvas>
+        <Avatar />
 
         <div className="home__right">
           <h1 className="home__title">
             Hello, <br />
-            <span className="home__introduction">I'm <span className="home__introduction home__name">Minha Kim</span></span>
+            <span className="home__introduction">
+              I'm{" "}
+              <span className="home__introduction home__name">Minha Kim</span>
+            </span>
           </h1>
           <h3 className="home__description">
             A Full Stack Developer based in Vancouver, Canada

@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import fithub from "../pics/projects/fithub.png";
 import pickmiup from "../pics/projects/pickmiup.png";
 import todolist from "../pics/projects/todolist.png";
-import "../styles/mywork.css";
+import "../styles/my-work.css";
 
 const works = [
   {
@@ -29,36 +29,58 @@ const works = [
   },
 ];
 
-
 export default function MyWork() {
-  
   const [filteredWork, setFilteredWork] = useState(works);
 
-  const [activeButton, setActiveButton] = useState("all")
+  const [activeButton, setActiveButton] = useState("all");
 
   const getFilteredWork = (status) => {
-
     setActiveButton(status);
 
-    if(status === "all"){
+    if (status === "all") {
       setFilteredWork(works);
       return;
     }
 
-    setFilteredWork(works.filter(work => work.status === status))
-  }
-  
+    setFilteredWork(works.filter((work) => work.status === status));
+  };
+
   return (
     <section id="mywork" className="section">
       <h1 className="mywork__title">My Work</h1>
       <div className="mywork__buttons">
-        <button className={activeButton === "all" ? "mywork__button active" : "mywork__button"} onClick={() => {getFilteredWork("all")}}>
+        <button
+          className={
+            activeButton === "all" ? "mywork__button active" : "mywork__button"
+          }
+          onClick={() => {
+            getFilteredWork("all");
+          }}
+        >
           All<span className="mywork__count">3</span>
         </button>
-        <button className={activeButton === "completed" ? "mywork__button active" : "mywork__button"} onClick={() => {getFilteredWork("completed")}}>
+        <button
+          className={
+            activeButton === "completed"
+              ? "mywork__button active"
+              : "mywork__button"
+          }
+          onClick={() => {
+            getFilteredWork("completed");
+          }}
+        >
           Completed<span className="mywork__count">2</span>
         </button>
-        <button className={activeButton === "inProgress"  ? "mywork__button active" : "mywork__button"} onClick={() => {getFilteredWork("inProgress")}}>
+        <button
+          className={
+            activeButton === "inProgress"
+              ? "mywork__button active"
+              : "mywork__button"
+          }
+          onClick={() => {
+            getFilteredWork("inProgress");
+          }}
+        >
           In Progress<span className="mywork__count">1</span>
         </button>
       </div>
@@ -66,11 +88,7 @@ export default function MyWork() {
         {filteredWork.map((work, index) => (
           <ul key={index}>
             <a href={work.link} target="_blank" className="project">
-              <img
-                className="project__img"
-                src={work.src}
-                alt={work.title}
-              />
+              <img className="project__img" src={work.src} alt={work.title} />
               <div className="project__description">
                 <h3>{work.title}</h3>
                 <span>{work.description}</span>
@@ -82,5 +100,3 @@ export default function MyWork() {
     </section>
   );
 }
-
-
