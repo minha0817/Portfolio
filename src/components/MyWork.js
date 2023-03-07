@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import fithub from "../pics/projects/fithub.png";
 import pickmiup from "../pics/projects/pickmiup.png";
 import todolist from "../pics/projects/todolist.png";
+import shoppy from "../pics/projects/shoppy.png";
 import "../styles/my-work.css";
 
 const works = [
@@ -27,6 +28,13 @@ const works = [
     src: todolist,
     status: "inProgress",
   },
+  {
+    title: "Shoppy",
+    description: "HTML, CSS, JS, React, Firebase, Cloudinary",
+    link: "https://github.com/minha0817/shoppy",
+    src: shoppy,
+    status: "inProgress",
+  }
 ];
 
 export default function MyWork() {
@@ -45,6 +53,14 @@ export default function MyWork() {
     setFilteredWork(works.filter((work) => work.status === status));
   };
 
+  const getfilteredCount = (status) => {
+    if(status === "all"){
+      return works.length
+    }
+
+    return works.filter((work) => work.status === status).length;
+  }
+
   return (
     <section id="mywork" className="section">
       <h1 className="mywork__title">My Work</h1>
@@ -57,7 +73,7 @@ export default function MyWork() {
             getFilteredWork("all");
           }}
         >
-          All<span className="mywork__count">3</span>
+          All<span className="mywork__count">{getfilteredCount("all")}</span>
         </button>
         <button
           className={
@@ -69,7 +85,7 @@ export default function MyWork() {
             getFilteredWork("completed");
           }}
         >
-          Completed<span className="mywork__count">2</span>
+          Completed<span className="mywork__count">{getfilteredCount("completed")}</span>
         </button>
         <button
           className={
@@ -81,7 +97,7 @@ export default function MyWork() {
             getFilteredWork("inProgress");
           }}
         >
-          In Progress<span className="mywork__count">1</span>
+          In Progress<span className="mywork__count">{getfilteredCount("inProgress")}</span>
         </button>
       </div>
       <div className="projects">
