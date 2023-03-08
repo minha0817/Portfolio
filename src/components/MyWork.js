@@ -3,6 +3,7 @@ import fithub from "../pics/projects/fithub.png";
 import pickmiup from "../pics/projects/pickmiup.png";
 import todolist from "../pics/projects/todolist.png";
 import shoppy from "../pics/projects/shoppy.png";
+import hipapa from "../pics/projects/hipapa.png";
 import "../styles/my-work.css";
 
 const works = [
@@ -34,7 +35,14 @@ const works = [
     link: "https://github.com/minha0817/shoppy",
     src: shoppy,
     status: "inProgress",
-  }
+  },
+  {
+    title: "HiPapa",
+    description: "HTML, CSS, JS, React, NextJS",
+    link: "https://github.com/minha0817/hi-papa",
+    src: hipapa,
+    status: "inProgress",
+  },
 ];
 
 export default function MyWork() {
