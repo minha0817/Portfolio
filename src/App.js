@@ -13,6 +13,7 @@ function App() {
       <Nav />
       <Home />
       <About />
+      <h1>cover letter part </h1>
       <Skill />
       <MyWork />
       <Contact />
