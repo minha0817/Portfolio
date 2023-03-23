@@ -1,5 +1,5 @@
-.whyme {
-  margin: 60px 40px 40px 40px;
+#whyme {
+  padding: 60px 40px 40px 40px;
   display: flex;  
   justify-content: center;
   flex-direction: column;
@@ -8,6 +8,7 @@
 
 .whyme__title {
   color: var(--color-dark-grey);
+  text-align: center;
 }
 
 .whyme__reasons {

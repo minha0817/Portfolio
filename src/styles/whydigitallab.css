@@ -1,23 +1,24 @@
-.WhyDigitalLab {
+#whydigitallab {
   background-color: var(--color-light-white);
-  padding: 60px 40px 40px 40px;
+  padding: 60px 40px 80px 40px;
   display: flex;  
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.WhyDigitalLab__title {
+.whydigitallab__title {
   color: var(--color-dark-grey);
+  text-align: center;
 }
 
-.WhyDigitalLab__reasons {
+.whydigitallab__reasons {
   margin-top: 20px;
   color: var(--color-light-white);
   background-color: #DAE8F9;
   padding: 20px;
 }
 
-.WhyDigitalLab__reason {
+.whydigitallab__reason {
   margin: 50px 20px 70px 20px;
 }

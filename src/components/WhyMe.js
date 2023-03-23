@@ -3,7 +3,7 @@ import "../styles/whyme.css";
 
 export default function WhyMe() {
   return (
-    <div className="whyme">
+    <div id="whyme">
       <h1 className="whyme__title">But Why Digital lab should hire me?</h1>
       <div className="whyme__reasons">
         <div className="whyme__reason">

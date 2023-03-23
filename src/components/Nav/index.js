@@ -49,6 +49,14 @@ export default function Nav() {
             navCallback={() => handleBtnClick("about")}
           />
           <NavButton
+            navTitle={"Why DigitalLab"}
+            navCallback={() => handleBtnClick("whydigitallab")}
+          />
+          <NavButton
+            navTitle={"Why me"}
+            navCallback={() => handleBtnClick("whyme")}
+          />
+          <NavButton
             navTitle={"Skills"}
             navCallback={() => handleBtnClick("skills")}
           />

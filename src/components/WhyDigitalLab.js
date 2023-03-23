@@ -3,11 +3,11 @@ import "../styles/whydigitallab.css";
 
 export default function WhyDigitalLab() {
   return (
-    <div className="WhyDigitalLab">
-      <h1 className="WhyDigitalLab__title">What I love about Digital Lab</h1>
+    <div id="whydigitallab">
+      <h1 className="whydigitallab__title">What I love about Digital Lab</h1>
       <p>Here are some facts that why I love Digital lab...</p>
-      <div className="WhyDigitalLab__reasons">
-        <div className="WhyDigitalLab__reason">
+      <div className="whydigitallab__reasons">
+        <div className="whydigitallab__reason">
           <h2>1. Digital lab helps children and the family.</h2>
           <p>
             the Company's solutions aim to help businesses streamline their
@@ -15,7 +15,7 @@ export default function WhyDigitalLab() {
             with customers and employees.
           </p>
         </div>
-        <div className="WhyDigitalLab__reason">
+        <div className="whydigitallab__reason">
           <h2>2. Digital lab helps children and the family.</h2>
           <p>
             the Company's solutions aim to help businesses streamline their
@@ -23,7 +23,7 @@ export default function WhyDigitalLab() {
             with customers and employees.
           </p>
         </div>
-        <div className="WhyDigitalLab__reason">
+        <div className="whydigitallab__reason">
           <h2>3. Digital lab helps children and the family.</h2>
           <p>
             the Company's solutions aim to help businesses streamline their
