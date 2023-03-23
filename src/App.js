@@ -6,6 +6,8 @@ import About from "./components/About";
 import Skill from "./components/Skill";
 import MyWork from "./components/MyWork";
 import Contact from "./components/Contact";
+import WhyDigitalLab from "./components/WhyDigitalLab";
+import WhyMe from "./components/WhyMe";
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <Nav />
       <Home />
       <About />
-      <h1>cover letter part </h1>
+      <WhyDigitalLab />
+      <WhyMe />
       <Skill />
       <MyWork />
       <Contact />

@@ -1,0 +1,34 @@
+.whyme {
+  margin: 60px 40px 40px 40px;
+  display: flex;  
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whyme__title {
+  color: var(--color-dark-grey);
+}
+
+.whyme__reasons {
+  display: flex;
+  margin: 30px;
+}
+
+.whyme__reason {
+  margin: 10px 20px;
+  background-color: #DAE8F9;
+  padding: 20px 35px;
+  text-align: center;
+}
+
+.whyme__reason__title {
+  margin: 20px 0;
+}
+
+.whyme__reason__explanation {
+  margin: 40px 0;
+}
+
+.whyme__reason__icon {
+}
