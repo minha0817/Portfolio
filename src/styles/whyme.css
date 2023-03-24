@@ -28,7 +28,8 @@
 }
 
 .whyme__reason__explanation {
-  margin: 40px 0;
+  margin: 20px 0;
+  text-align: start;
 }
 
 @media screen and (max-width: 768px){

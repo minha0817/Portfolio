@@ -12,13 +12,17 @@ export default function WhyMe() {
             src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/90/null/external-passion-relationship-flaticons-lineal-color-flat-icons.png"
             alt="passion icon"
           />
-          <h2 className="whyme__reason__title">Passion for design and UX</h2>
+          <h2 className="whyme__reason__title">
+            Passion for working with children
+          </h2>
           <p className="whyme__reason__explanation">
-            I have a strong desire to create software and online experiences
-            that are both visually appealing and intuitive for users. I am
-            always looking for ways to make the user's journey through a website
-            as seamless and enjoyable as possible. I believe that design can
-            change the way people interact with software.
+            Over the years, I have honed my passion in working with children in
+            a variety of settings, from part-time after-school programs to
+            working as a full-time ECE teacher. I take great joy in seeing the
+            excitement and wonderment in their eyes as they discover the world
+            and learn new skills. I look forward to discussing how I can
+            contribute to your mission of supporting children and families in
+            the community.
           </p>
         </div>
         <div className="whyme__reason">
@@ -27,13 +31,14 @@ export default function WhyMe() {
             src="https://img.icons8.com/fluency/100/null/fast-track-female.png"
             alt="fast learning icon"
           />
-          <h2 className="whyme__reason__title">Passion for design and UX</h2>
+          <h2 className="whyme__reason__title">Quickly adopt and learn </h2>
           <p className="whyme__reason__explanation">
-            I have a strong desire to create software and online experiences
-            that are both visually appealing and intuitive for users. I am
-            always looking for ways to make the user's journey through a website
-            as seamless and enjoyable as possible. I believe that design can
-            change the way people interact with software.
+            One of my greatest strengths is my ability to quickly adopt and
+            learn new concepts and technologies. I went from knowing almost
+            nothing about web development to being able to build and deploy
+            fully functioning web apps in the span of three months. I will
+            continue to seek out new learning opportunities and take every
+            chance to improve myself.
           </p>
         </div>
         <div className="whyme__reason">
@@ -42,13 +47,14 @@ export default function WhyMe() {
             className="whyme__reason__icon"
             alt="collaboration icon"
           />
-          <h2 className="whyme__reason__title">Passion for design and UX</h2>
+          <h2 className="whyme__reason__title">Collaboration</h2>
           <p className="whyme__reason__explanation">
-            I have a strong desire to create software and online experiences
-            that are both visually appealing and intuitive for users. I am
-            always looking for ways to make the user's journey through a website
-            as seamless and enjoyable as possible. I believe that design can
-            change the way people interact with software.
+            My experience as Early Childhood Educator has taught me that working
+            with others requires patience, empathy and a willingness to learn
+            from those around me. I take pride in being a reliable and
+            supportive team member, and I am committed to doing whatever it
+            takes to help my colleagues succeed. I am eager to contribute my
+            skills and expertise to a team that shares this belief.
           </p>
         </div>
       </div>
