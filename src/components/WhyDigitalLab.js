@@ -26,7 +26,7 @@ export default function WhyDigitalLab() {
             strong company culture not only leads to better outcomes, but can
             also help you feel more fulfilled and engaged in your work. I would
             love to be surrounded by like-minded people who are dedicated to
-            their craft and excited to tackle challenges together
+            their craft and excited to tackle challenges together.
           </p>
         </div>
         <div className="whydigitallab__reason">

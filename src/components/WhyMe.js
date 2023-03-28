@@ -19,7 +19,7 @@ export default function WhyMe() {
             Over the years, I have honed my passion in working with children in
             a variety of settings, from part-time after-school programs to
             working as a full-time ECE teacher. I take great joy in seeing the
-            excitement and wonderment in their eyes as they discover the world
+            excitement and wonderment in children's eyes as they discover the world
             and learn new skills. I look forward to discussing how I can
             contribute to your mission of supporting children and families in
             the community.
